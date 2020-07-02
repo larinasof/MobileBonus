@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        long Balance = 500;
-        long DepositAmount = 1500;
-        long Bonus = 0;
-        if (DepositAmount > 1000) {
-            Bonus = DepositAmount / 100;
+        int balance = 500;
+        int deposit_amount = 1500;
+        int bonus = 0;
+        if (deposit_amount > 1000) {
+            bonus = deposit_amount / 100;
         }
-        long FinalBalance = Balance + DepositAmount + Bonus;
-        System.out.println(Bonus);
-        System.out.println(FinalBalance);
+        int final_balance = balance + deposit_amount + bonus;
+        System.out.println("Бонус за начисление:" + bonus);
+        System.out.println("Текущий баланс:" + final_balance);
     }
 }
